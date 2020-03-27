@@ -20,11 +20,13 @@ Plugin for [Kodi](https://kodi.tv/) to launch [Steamlink](https://steamcommunity
   [Unit]
   Description = Kodi Media Center
   After = systemd-user-sessions.service network.target sound.target
+
   [Service]
   User = pi
   Group = pi
   Type = simple
   ExecStart = /usr/bin/kodi-standalone
+
   [Install]
   WantedBy = multi-user.target
   EOF
